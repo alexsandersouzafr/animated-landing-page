@@ -2,32 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --black: #263238;
+    --d_grey: #4d4d4d;
+    --grey: #717171;
+    --l_grey: #89939e;
+    --grey-blue: #abbed1;
+    --silver: #f5f7fa;
+    --white: #ffffff;
+
+    --primary: #28cb8b;
+    --secondary: #263238;
+    --info: #2194f3;
+
+    --shade1: #43a046;
+    --shade2: #388e3b;
+    --shade3: #237d31;
+    --shade4: #1b5e1f;
+    --shade5: #103e13;
+
+    --tint1: #66bb69;
+    --tint2: #81c784;
+    --tint3: #a5d6a7;
+    --tint4: #c8e6c9;
+    --tint5: #e8f5e9;
+
+    --warning: #fbc02d;
+    --error: #e53835;
+    --success: #2e7d31;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
