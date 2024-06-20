@@ -12,7 +12,7 @@
     --silver: #f5f7fa;
     --white: #ffffff;
 
-    --primary: #28cb8b;
+    --primary: #4caf4f;
     --secondary: #263238;
     --info: #2194f3;
 
@@ -38,28 +38,28 @@
   }
 
   h1 {
-    @apply font-semibold text-[64px] leading-[76px];
+    @apply text-[64px] font-semibold leading-[76px];
   }
 
   h2 {
-    @apply font-semibold text-[36px] leading-[44px];
+    @apply text-[36px] font-semibold leading-[44px];
   }
 
   h3 {
-    @apply font-semibold text-[28px] leading-[36px];
+    @apply text-[28px] font-semibold leading-[36px];
   }
 
   h4 {
-    @apply font-semibold text-[20px] leading-[28px];
+    @apply text-[20px] font-semibold leading-[28px];
   }
 
   p,
   .body1 {
-    @apply text-[28px] leading-[36px];
+    @apply text-[18px] leading-[28px];
   }
 
   .body2 {
-    @apply text-[26px] leading-[24px];
+    @apply text-[16px] leading-[24px];
   }
 
   .body3 {
