@@ -32,13 +32,41 @@
     --error: #e53835;
     --success: #2e7d31;
   }
-}
 
-@layer base {
-  * {
-    @apply border-border;
-  }
   body {
-    @apply bg-background text-foreground;
+    @apply text-[#212121];
+  }
+
+  h1 {
+    @apply font-semibold text-[64px] leading-[76px];
+  }
+
+  h2 {
+    @apply font-semibold text-[36px] leading-[44px];
+  }
+
+  h3 {
+    @apply font-semibold text-[28px] leading-[36px];
+  }
+
+  h4 {
+    @apply font-semibold text-[20px] leading-[28px];
+  }
+
+  p,
+  .body1 {
+    @apply text-[28px] leading-[36px];
+  }
+
+  .body2 {
+    @apply text-[26px] leading-[24px];
+  }
+
+  .body3 {
+    @apply text-[14px] leading-[20px];
+  }
+
+  .body4 {
+    @apply text-[12px] leading-[16px];
   }
 }
