@@ -26,7 +26,7 @@ export default function Hero() {
   );
   return (
     <div className="hero bg-silver" ref={scope}>
-      <section className="container flex flex-col-reverse items-center justify-center bg-silver px-4 py-16 md:grid md:h-[600px] md:grid-cols-12">
+      <section className="gap:8 container flex flex-col-reverse items-center justify-center bg-silver px-4 py-16 md:grid md:h-[600px] md:grid-cols-12 md:gap-0">
         <div className="col-span-8 flex flex-col gap-8">
           <h1 className="text text-d_grey">
             The best framework <br />
@@ -39,7 +39,7 @@ export default function Hero() {
             <Button>Register</Button>
           </span>
         </div>
-        <div className="illustration shrink">
+        <div className="illustration">
           <HeroIllustration />
         </div>
       </section>

@@ -43,6 +43,7 @@ export default function HeroIllustration() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       ref={scope}
+      className="h-80 md:h-[407px]"
     >
       <path
         d="M336.293 393.032C366.507 393.032 391 378.894 391 361.454C391 344.015 366.507 329.877 336.293 329.877C306.079 329.877 281.586 344.015 281.586 361.454C281.586 378.894 306.079 393.032 336.293 393.032Z"
