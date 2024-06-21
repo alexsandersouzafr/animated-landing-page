@@ -1,5 +1,6 @@
 "use client";
 
+import Hero from "@/components/hero";
 import NavBar from "@/components/nav-bar";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -10,8 +11,8 @@ export default function Home() {
   });
 
   return (
-    <main className="opacity-0">
-      <NavBar />
+    <main className="space-y-10 opacity-0">
+      <Hero />
     </main>
   );
 }
