@@ -22,19 +22,26 @@ export default function NavBar() {
   useGSAP(
     () => {
       const tl = gsap.timeline({ ease: Power3.easeOut });
-      tl.from(".logo, li, .cta", {
-        y: -10,
-        opacity: 0,
-        duration: 0.5,
-        stagger: 0.1,
-        ease: "sine",
-      });
+      tl.to(scope.current, { opacity: 1, duration: 1 }).from(
+        ".logo, li, .cta",
+        {
+          y: -10,
+          opacity: 0,
+          duration: 0.5,
+          stagger: 0.1,
+          ease: "sine",
+        },
+        "<",
+      );
     },
     { scope: scope },
   );
 
   return (
-    <nav className="container flex h-[84px] items-center gap-8" ref={scope}>
+    <nav
+      className="container flex h-[84px] items-center gap-8 opacity-0"
+      ref={scope}
+    >
       <div className="logo relative h-full w-28 shrink-0 md:w-36">
         <Image src={logo} fill className="object-contain" alt="logo" />
       </div>
