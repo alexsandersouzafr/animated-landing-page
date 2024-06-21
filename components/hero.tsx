@@ -13,7 +13,7 @@ export default function Hero() {
       tl.from(".hero", {
         y: 15,
         opacity: 0,
-        duration: 1,
+        duration: 0.3,
         ease: "power1.out",
       }).from(".text, .body2, .button, .illustration", {
         x: -15,
