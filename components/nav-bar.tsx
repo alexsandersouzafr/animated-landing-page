@@ -52,7 +52,7 @@ export default function NavBar() {
         <Button variant="tertiary" size="md" className="h-[40px]">
           Login
         </Button>
-        <Button size="md" className="h-[40px]">
+        <Button size="md" className="hidden h-[40px] md:inline-block">
           Sign Up
         </Button>
       </div>

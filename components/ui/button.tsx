@@ -13,8 +13,8 @@ const buttonVariants = cva(
         tertiary: "bg-transparent text-primary hover:bg-silver active:bg-tint5",
       },
       size: {
-        default: "md:h-[56px] h-[32px] px-8 py-2 text-sm md:text-lg ",
-        md: "md:h-[48px] h-[32px] px-6 md:text-base text-sm ",
+        default: "h-[56px] px-8 py-2 text-lg ",
+        md: "h-[48px] px-6 text-base ",
         sm: "h-[32px] px-8 text-sm",
         icon: "h-10 w-10",
       },
